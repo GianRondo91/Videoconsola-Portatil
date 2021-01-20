@@ -26,7 +26,7 @@ div {
 }
 
 
-/**/
+/*Consola Gral*/
 
 .consola {
     width: 52em;
@@ -42,11 +42,17 @@ div {
     align-items: center;
 }
 
-.screen {}
+
+/*Screen*/
+
+.screen {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 .grey-screen {
-    background-color: grey;
-    width: 36.8em;
+    background-color: #33302E;
+    width: 37.2em;
     height: 18em;
 }
 
@@ -59,6 +65,56 @@ div {
 .game-screen {
     background-image: url("../img/screen.jpg");
     /**/
-    width: 32em;
-    height: 12em;
+    width: 30em;
+    height: 14em;
+}
+
+
+/*Controls*/
+
+.control {
+    width: 6.54em;
+    height: 18em;
+}
+
+.control-top {
+    height: 4.5em;
+}
+
+.control-center {
+    height: 8.5em;
+}
+
+.control-button {
+    height: 4.5em;
+}
+
+
+/*CONTROL-LEFT*/
+
+.control-left {
+    background-color: #40A4C6;
+}
+
+.control-left-top {
+    border-radius: 4em 0em 0em 0em;
+}
+
+.control-left-button {
+    border-radius: 0em 0em 0em 4em;
+}
+
+
+/*CONTROL-RIGHT*/
+
+.control-right {
+    background-color: #FF5733;
+}
+
+.control-right-top {
+    border-radius: 0em 4em 0em 0em;
+}
+
+.control-right-button {
+    border-radius: 0em 0em 4em 0em;
 }
