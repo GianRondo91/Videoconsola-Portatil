@@ -1,20 +1,64 @@
+/*BORRAR*/
+
 body {
     background-color: blue;
 }
 
+div {
+    border: .1em solid white;
+}
+
 .imagen {
-    width: 55em;
-    height: 25em;
+    width: 52.3em;
+    height: 23.7em;
     margin: 0 auto;
     background-image: url("../img/nintendo-switch.jpg");
+}
+
+.game-screen {
+    background-image: url("../img/screen.jpg");
+}
+
+.imagen,
+.game-screen {
     background-repeat: no-repeat;
     background-position: center;
 }
 
+
+/**/
+
 .consola {
-    border: .3em solid white;
-    /**/
-    margin: 0 auto;
     width: 52em;
     height: 20em;
+}
+
+.consola,
+.screen {
+    margin: 0 auto;
+    /*Centrar*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen {}
+
+.grey-screen {
+    background-color: grey;
+    width: 36.8em;
+    height: 18em;
+}
+
+.black-screen {
+    background-color: black;
+    width: 35em;
+    height: 17em;
+}
+
+.game-screen {
+    background-image: url("../img/screen.jpg");
+    /**/
+    width: 32em;
+    height: 12em;
 }
