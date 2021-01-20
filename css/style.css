@@ -75,6 +75,7 @@ div {
 .control {
     width: 6.54em;
     height: 18em;
+    border-image-source: linear-gradient(#a42e6e, #783057);
 }
 
 .control-top {
@@ -104,6 +105,34 @@ div {
     border-radius: 0em 0em 0em 4em;
 }
 
+.button-square {
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #424242;
+    position: fixed;
+    margin-left: 3.8em;
+    margin-top: 0.5em;
+}
+
+.button-square-circle {
+    width: 0.5em;
+    height: 0.5em;
+    border: 0.1em solid black;
+    border-radius: 0.5em;
+    background-color: #424242;
+}
+
+.control-left-button {
+    width: 2.5em;
+    height: 2.5em;
+    float: left;
+    margin-bottom: 1em;
+    background-color: #424242;
+    margin-top: 2.5em;
+    margin-left: 1.5em;
+    border-radius: 5em;
+}
+
 
 /*CONTROL-RIGHT*/
 
@@ -119,6 +148,48 @@ div {
     border-radius: 0em 0em 4em 0em;
 }
 
+.control-right-button,
+.control-left-button {
+    position: relative
+}
+
+.control-right-button {
+    width: 2.5em;
+    height: 2.5em;
+    background-color: #424242;
+    margin-top: 3em;
+    margin-left: 1.5em;
+    border-radius: 5em;
+    ;
+}
+
+.control-right-button-center,
+.control-left-button-center {
+    width: 1.5em;
+    height: 1.5em;
+    background-color: #424242;
+    border: 0.1em solid black;
+    border-radius: 5em;
+    position: absolute;
+    top: 0.4em;
+    left: 0.4em;
+}
+
+.button-circle {
+    width: 1.2em;
+    height: 1.2em;
+    background-color: #6C6666;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    border-radius: 5em;
+}
+
+.button-home {
+    background-color: #424242;
+    border-radius: 5em;
+    font-size: 0.8em;
+}
+
 
 /*------------------------------*/
 
@@ -126,7 +197,7 @@ div {
 /*BUTTONS*/
 
 .buttons {
-    background-color: #33302E;
+    background-color: #424242;
     border-radius: 10em;
     text-align: center;
 }
@@ -152,6 +223,7 @@ div {
 
 .button-less {
     padding: 0.4em 0.2em 0em 0em;
+    float: right;
 }
 
 
