@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Videoconsola</title>
 </head>
@@ -13,19 +14,51 @@
     </div>
     <div class="consola">
         <div class="control">
-            <div class="control-top control-left control-left-top"></div>
-            <div class="control-center control-left"></div>
-            <div class="control-button control-left control-left-button"></div>
+            <div class="control-top control-left control-left-top">
+                <div class="button-less"><i class="fas fa-window-minimize"></i></div>
+            </div>
+            <div class="control-center control-left">
+
+                <div class="four-buttons">
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-arrow"><i class="fas fa-sort-up"></i></div>
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-arrow"><i class="fas fa-caret-left"></i></div>
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-arrow"><i class="fas fa-caret-right"></i></div>
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-arrow"><i class="fas fa-sort-down"></i></div>
+                    <div class="four-button"></div>
+                </div>
+            </div>
+            <div class="control-bottom control-left control-left-bottom">
+            </div>
         </div>
         <div class="screen grey-screen">
             <div class="screen black-screen">
-                <div class="screen game-screen"></div>
+                <div class="screen game-screen">
+                </div>
             </div>
         </div>
         <div class="control">
-            <div class="control-top control-right control-right-top"></div>
-            <div class="control-center control-right"></div>
-            <div class="control-button control-right control-right-button"></div>
+            <div class="control-top control-right control-right-top">
+                <div class="button-plus"><i class="fas fa-plus"></i></div>
+                <div class="four-buttons">
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-word">X</div>
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-word">A</div>
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-word">B</div>
+                    <div class="four-button"></div>
+                    <div class="four-button buttons button-word">Y</div>
+                    <div class="four-button"></div>
+                </div>
+            </div>
+            <div class="control-center control-right">
+            </div>
+            <div class="control-bottom control-right control-right-bottom">
+            </div>
         </div>
     </div>
     <script src="js/main.js"></script>

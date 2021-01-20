@@ -85,7 +85,7 @@ div {
     height: 8.5em;
 }
 
-.control-button {
+.control-bottom {
     height: 4.5em;
 }
 
@@ -100,7 +100,7 @@ div {
     border-radius: 4em 0em 0em 0em;
 }
 
-.control-left-button {
+.control-left-bottom {
     border-radius: 0em 0em 0em 4em;
 }
 
@@ -115,6 +115,53 @@ div {
     border-radius: 0em 4em 0em 0em;
 }
 
-.control-right-button {
+.control-right-bottom {
     border-radius: 0em 0em 4em 0em;
+}
+
+
+/*------------------------------*/
+
+
+/*BUTTONS*/
+
+.buttons {
+    background-color: #33302E;
+    border-radius: 10em;
+    text-align: center;
+}
+
+.button-arrow {
+    color: black;
+}
+
+
+/*LEFT-BUTTONS*/
+
+.four-buttons {
+    width: 5em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.four-button {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.button-less {
+    padding: 0.4em 0.2em 0em 0em;
+}
+
+
+/*RIGHT-BUTTONS*/
+
+.button-word {
+    color: white;
+}
+
+.button-plus {
+    font-size: 1.3em;
+    padding: 0.4em 0em 0em 0.2em;
 }
