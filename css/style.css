@@ -1,239 +1,237 @@
-/*BORRAR*/
-
-body {
-    background-color: blue;
-}
-
-div {
-    border: .1em solid white;
-}
-
-.imagen {
-    width: 52.3em;
-    height: 23.7em;
-    margin: 0 auto;
-    background-image: url("../img/nintendo-switch.jpg");
-}
-
-.game-screen {
-    background-image: url("../img/screen.jpg");
-}
-
-.imagen,
-.game-screen {
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-/*Consola Gral*/
-
-.consola {
-    width: 52em;
-    height: 20em;
-}
-
-.consola,
-.screen {
-    margin: 0 auto;
-    /*Centrar*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/*Screen*/
-
-.screen {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.grey-screen {
-    background-color: #33302E;
-    width: 37.2em;
-    height: 18em;
-}
-
-.black-screen {
-    background-color: black;
-    width: 35em;
-    height: 17em;
-}
-
-.game-screen {
-    background-image: url("../img/screen.jpg");
-    /**/
-    width: 30em;
-    height: 14em;
-}
-
-
-/*Controls*/
-
-.control {
-    width: 6.54em;
-    height: 18em;
-    border-image-source: linear-gradient(#a42e6e, #783057);
-}
-
-.control-top {
-    height: 4.5em;
-}
-
-.control-center {
-    height: 8.5em;
-}
-
-.control-bottom {
-    height: 4.5em;
-}
-
-
-/*CONTROL-LEFT*/
-
-.control-left {
-    background-color: #40A4C6;
-}
-
-.control-left-top {
-    border-radius: 4em 0em 0em 0em;
-}
-
-.control-left-bottom {
-    border-radius: 0em 0em 0em 4em;
-}
-
-.button-square {
-    width: 1.2em;
-    height: 1.2em;
-    background-color: #424242;
-    position: fixed;
-    margin-left: 3.8em;
-    margin-top: 0.5em;
-}
-
-.button-square-circle {
-    width: 0.5em;
-    height: 0.5em;
-    border: 0.1em solid black;
-    border-radius: 0.5em;
-    background-color: #424242;
-}
-
-.control-left-button {
-    width: 2.5em;
-    height: 2.5em;
-    float: left;
-    margin-bottom: 1em;
-    background-color: #424242;
-    margin-top: 2.5em;
-    margin-left: 1.5em;
-    border-radius: 5em;
-}
-
-
-/*CONTROL-RIGHT*/
-
-.control-right {
-    background-color: #FF5733;
-}
-
-.control-right-top {
-    border-radius: 0em 4em 0em 0em;
-}
-
-.control-right-bottom {
-    border-radius: 0em 0em 4em 0em;
-}
-
-.control-right-button,
-.control-left-button {
-    position: relative
-}
-
-.control-right-button {
-    width: 2.5em;
-    height: 2.5em;
-    background-color: #424242;
-    margin-top: 3em;
-    margin-left: 1.5em;
-    border-radius: 5em;
-    ;
-}
-
-.control-right-button-center,
-.control-left-button-center {
-    width: 1.5em;
-    height: 1.5em;
-    background-color: #424242;
-    border: 0.1em solid black;
-    border-radius: 5em;
-    position: absolute;
-    top: 0.4em;
-    left: 0.4em;
-}
-
-.button-circle {
-    width: 1.2em;
-    height: 1.2em;
-    background-color: #6C6666;
-    margin-left: 1em;
-    margin-top: 0.5em;
-    border-radius: 5em;
-}
-
-.button-home {
-    background-color: #424242;
-    border-radius: 5em;
-    font-size: 0.8em;
-}
-
-
-/*------------------------------*/
-
-
-/*BUTTONS*/
-
-.buttons {
-    background-color: #424242;
-    border-radius: 10em;
-    text-align: center;
-}
-
-.button-arrow {
-    color: black;
-}
-
-
-/*LEFT-BUTTONS*/
-
-.four-buttons {
-    width: 5em;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.four-button {
-    width: 1.3em;
-    height: 1.3em;
-}
-
-.button-less {
-    padding: 0.4em 0.2em 0em 0em;
-    float: right;
-}
-
-
-/*RIGHT-BUTTONS*/
-
-.button-word {
-    color: white;
-}
-
-.button-plus {
-    font-size: 1.3em;
-    padding: 0.4em 0em 0em 0.2em;
-}
+  /*BORRAR*/
+  
+  * {
+      padding: 0;
+  }
+  
+  div {
+      border: .1em solid white;
+  }
+  
+  .game-screen {
+      background-image: url("../img/screen.jpg");
+  }
+  
+  .imagen,
+  .game-screen {
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  /************/
+  /*Consola Gral*/
+  
+  .consola {
+      width: 52em;
+      height: 20em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20em;
+  }
+  
+  .consola,
+  .screen {
+      /*Centrar*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  /*Screen*/
+  
+  .screen {
+      margin-left: 0;
+      margin-right: 0;
+  }
+  
+  .grey-screen {
+      background-color: #33302E;
+      width: 37.2em;
+      height: 18em;
+  }
+  
+  .black-screen {
+      background-color: black;
+      width: 35em;
+      height: 17em;
+  }
+  
+  .game-screen {
+      background-image: url("../img/screen.jpg");
+      /**/
+      width: 30em;
+      height: 14em;
+  }
+  /*Controls*/
+  
+  .control {
+      width: 6.54em;
+      height: 18em;
+      border-image-source: linear-gradient(#a42e6e, #783057);
+  }
+  
+  .control-top {
+      height: 4.5em;
+  }
+  
+  .control-center {
+      height: 8.5em;
+  }
+  
+  .control-bottom {
+      height: 4.5em;
+  }
+  /*CONTROL-LEFT*/
+  
+  .control-left {
+      background-color: #40A4C6;
+  }
+  
+  .control-left-top {
+      border-radius: 4em 0em 0em 0em;
+  }
+  
+  .control-left-bottom {
+      border-radius: 0em 0em 0em 4em;
+  }
+  
+  .button-square {
+      width: 1.2em;
+      height: 1.2em;
+      background-color: #424242;
+      position: absolute;
+      margin-left: 3.8em;
+      margin-top: 0.5em;
+  }
+  
+  .button-square-circle {
+      width: 0.5em;
+      height: 0.5em;
+      border: 0.1em solid black;
+      border-radius: 0.5em;
+      background-color: #424242;
+  }
+  
+  .control-left-button {
+      width: 2.5em;
+      height: 2.5em;
+      float: left;
+      margin-bottom: 1em;
+      background-color: #424242;
+      margin-top: 2.5em;
+      margin-left: 1.5em;
+      border-radius: 5em;
+  }
+  /*CONTROL-RIGHT*/
+  
+  .control-right {
+      background-color: #FF5733;
+  }
+  
+  .control-right-top {
+      border-radius: 0em 4em 0em 0em;
+  }
+  
+  .control-right-bottom {
+      border-radius: 0em 0em 4em 0em;
+  }
+  
+  .control-right-button,
+  .control-left-button {
+      position: relative
+  }
+  
+  .control-right-button {
+      width: 2.5em;
+      height: 2.5em;
+      background-color: #424242;
+      margin-top: 3em;
+      margin-left: 1.5em;
+      border-radius: 5em;
+      ;
+  }
+  
+  .control-right-button-center,
+  .control-left-button-center {
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #424242;
+      border: 0.1em solid black;
+      border-radius: 5em;
+      position: absolute;
+      top: 0.4em;
+      left: 0.4em;
+  }
+  
+  .button-circle {
+      width: 1.2em;
+      height: 1.2em;
+      background-color: #6C6666;
+      margin-left: 1em;
+      margin-top: 0.9em;
+      border-radius: 5em;
+  }
+  
+  .button-home {
+      background-color: #424242;
+      border-radius: 5em;
+      font-size: 0.8em;
+  }
+  /*------------------------------*/
+  /*BUTTONS*/
+  
+  .buttons {
+      background-color: #424242;
+      border-radius: 10em;
+      text-align: center;
+  }
+  
+  .button-arrow {
+      color: black;
+  }
+  /*LEFT-BUTTONS*/
+  
+  .four-buttons {
+      width: 5em;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .four-button {
+      width: 1.3em;
+      height: 1.3em;
+  }
+  
+  .button-less {
+      padding: 0.4em 0.2em 0em 0em;
+      float: right;
+  }
+  /*RIGHT-BUTTONS*/
+  
+  .button-word {
+      color: white;
+  }
+  
+  .button-plus {
+      font-size: 1.3em;
+      padding: 0.4em 0em 0em 0.2em;
+  }
+  
+  @media screen and (max-width:1024px) {
+      .control {
+          position: relative;
+          margin-top: -20em;
+      }
+      .control-left {
+          left: 10em;
+      }
+      .control-right {
+          right: 20em;
+      }
+      .consola {
+          position: relative;
+      }
+      .grey-screen {
+          position: absolute;
+          top: 10em;
+      }
+  }
