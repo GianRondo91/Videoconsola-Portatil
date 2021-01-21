@@ -1,24 +1,9 @@
-  /*BORRAR*/
-  
-  * {
-      padding: 0;
-  }
-  
-  div {
-      border: .1em solid white;
-  }
-  
-  .game-screen {
-      background-image: url("../img/screen.jpg");
-  }
-  
-  .imagen,
-  .game-screen {
-      background-repeat: no-repeat;
-      background-position: center;
-  }
-  /************/
   /*Consola Gral*/
+  
+  body {
+      background: rgb(255, 24, 24);
+      background: linear-gradient(90deg, rgba(255, 24, 24, 1) 8%, rgba(17, 153, 181, 1) 100%);
+  }
   
   .consola {
       width: 52em;
@@ -55,9 +40,12 @@
   }
   
   .game-screen {
-      background-image: url("../img/screen.jpg");
-      /**/
       width: 30em;
+      height: 14em;
+  }
+  
+  .video {
+      width: 40em;
       height: 14em;
   }
   /*Controls*/
@@ -66,6 +54,7 @@
       width: 6.54em;
       height: 18em;
       border-image-source: linear-gradient(#a42e6e, #783057);
+      position: relative;
   }
   
   .control-top {
@@ -77,7 +66,7 @@
   }
   
   .control-bottom {
-      height: 4.5em;
+      height: 5em;
   }
   /*CONTROL-LEFT*/
   
@@ -97,9 +86,12 @@
       width: 1.2em;
       height: 1.2em;
       background-color: #424242;
-      position: absolute;
       margin-left: 3.8em;
-      margin-top: 0.5em;
+      margin-top: 1em;
+      border-radius: 0.2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   
   .button-square-circle {
@@ -119,6 +111,17 @@
       margin-top: 2.5em;
       margin-left: 1.5em;
       border-radius: 5em;
+  }
+  
+  .triger-left {
+      border-top: 0.3em solid;
+      border-left: 0.3em solid;
+      position: absolute;
+      top: -0.3em;
+      left: -0.20em;
+      width: 4.6em;
+      height: 4.2em;
+      border-radius: 88% 0% 0% 0%
   }
   /*CONTROL-RIGHT*/
   
@@ -143,10 +146,9 @@
       width: 2.5em;
       height: 2.5em;
       background-color: #424242;
-      margin-top: 3em;
       margin-left: 1.5em;
       border-radius: 5em;
-      ;
+      top: 3em;
   }
   
   .control-right-button-center,
@@ -162,18 +164,32 @@
   }
   
   .button-circle {
-      width: 1.2em;
-      height: 1.2em;
+      width: 1.3em;
+      height: 1.3em;
       background-color: #6C6666;
       margin-left: 1em;
-      margin-top: 0.9em;
+      margin-top: 4.5em;
       border-radius: 5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
   
   .button-home {
       background-color: #424242;
       border-radius: 5em;
       font-size: 0.8em;
+  }
+  
+  .triger-right {
+      border-top: 0.3em solid;
+      border-right: 0.3em solid;
+      position: absolute;
+      top: -0.3em;
+      right: -0.20em;
+      width: 4.6em;
+      height: 4.2em;
+      border-radius: 0% 88% 0% 0%
   }
   /*------------------------------*/
   /*BUTTONS*/
@@ -197,8 +213,10 @@
   }
   
   .four-button {
-      width: 1.3em;
-      height: 1.3em;
+      width: 1.5em;
+      height: 1.5em;
+      align-content: center;
+      display: grid;
   }
   
   .button-less {
@@ -221,17 +239,14 @@
           position: relative;
           margin-top: -20em;
       }
-      .control-left {
-          left: 10em;
-      }
-      .control-right {
-          right: 20em;
-      }
       .consola {
           position: relative;
       }
       .grey-screen {
           position: absolute;
           top: 10em;
+      }
+      .control-right {
+          border-left: 0.2em solid black;
       }
   }
