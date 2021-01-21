@@ -10,7 +10,7 @@
       height: 20em;
       margin-left: auto;
       margin-right: auto;
-      margin-top: 20em;
+      margin-top: 15em;
   }
   
   .consola,
@@ -19,6 +19,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+  }
+  
+  .logo img {
+      width: 10em;
   }
   /*Screen*/
   
@@ -71,7 +75,7 @@
   /*CONTROL-LEFT*/
   
   .control-left {
-      background-color: #40A4C6;
+      background-color: #2fa9c3;
   }
   
   .control-left-top {
@@ -126,7 +130,7 @@
   /*CONTROL-RIGHT*/
   
   .control-right {
-      background-color: #FF5733;
+      background: #ec5858
   }
   
   .control-right-top {
