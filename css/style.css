@@ -1,13 +1,13 @@
   /*Consola Gral*/
   
   body {
-      background: rgb(255, 24, 24);
       background: linear-gradient(90deg, rgba(255, 24, 24, 1) 8%, rgba(17, 153, 181, 1) 100%);
   }
   
   .consola {
       width: 52em;
       height: 20em;
+      max-width: 20em;
       margin-left: auto;
       margin-right: auto;
       margin-top: 15em;
@@ -182,6 +182,7 @@
       background-color: #424242;
       border-radius: 5em;
       font-size: 0.8em;
+      cursor: pointer;
   }
   
   .control-right-top,
@@ -278,7 +279,10 @@
   @media screen and (max-width:1024px) {
       .control {
           position: relative;
-          margin-top: -20em;
+          margin-top: -25em;
+      }
+      .control-left {
+          margin-right: 0em;
       }
       .consola {
           position: relative;
@@ -289,5 +293,17 @@
       }
       .control-right-center {
           /*border-left: 0.2em solid black;*/
+      }
+      .batery {
+          background-color: #33302E;
+          width: 8em;
+          height: 38em;
+      }
+  }
+  
+  @media screen and (max-width:860px) {
+      body {
+          background: #D13434;
+          margin: auto;
       }
   }

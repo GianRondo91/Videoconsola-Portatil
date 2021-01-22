@@ -1,33 +1,24 @@
-/*function reproducir() {
-    let button = document.getElementById("button");
-    button.addEventListener('click', presionar, false);
-}
-
-function presionar() {
-    let video = document.getElementById('video');
-    video.play();
-}
-*/
-
-/********* */
-
 let player;
-
+/*Funcion invocada por la API de youtube */
 function onYouTubeIframeAPIReady(params) {
-    console.log("hola");
-    player = new YT.Player('video');
-    player.addEventListener('onReady', 'reproducir');
-    player.addEventListener('onStateChange', 'reproducir');
+    /*Creo player */
+    player = new YT.Player('video', {
+        videoId: 'jcD2ZWHx0K8',
+        playerVars: {
+            controls: 0
+        }
+    });
+    /*Obtengo el elemento del botón */
+    let button = document.getElementById("play-button");
+
+    button.addEventListener('click', reproducir, false);
 }
 
 function reproducir() {
-    console.log("reproduce");
-
-}
-
-function reproducir(event) {
-    console.log(event.data);
-    if (event.data == YT.PlayerState.PLAYING) {
-
+    /*Si el estado es playing, hace lo siguiente */
+    if (player.getPlayerState() == YT.PlayerState.PLAYING) {
+        player.stopVideo();
+    } else {
+        player.playVideo();
     }
 }
