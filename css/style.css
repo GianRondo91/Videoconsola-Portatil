@@ -7,7 +7,6 @@
   .consola {
       width: 52em;
       height: 20em;
-      max-width: 20em;
       margin-left: auto;
       margin-right: auto;
       margin-top: 15em;
@@ -44,6 +43,7 @@
       width: 35em;
       height: 17em;
       box-shadow: 0em 0em 0.2em 0.2em black;
+      border-radius: 0.5em;
   }
   
   .game-screen {
@@ -54,6 +54,13 @@
   .video {
       width: 40em;
       height: 14em;
+  }
+  
+  .grey-screen-border {
+      background: white;
+      width: 0em;
+      height: 5em;
+      /*corregir*/
   }
   /*Controls*/
   
@@ -275,6 +282,11 @@
       padding: 0.4em 0em 0em 0.4em;
       color: #33302E;
   }
+  /*No se muestra la bateria cuando esta grande la pantalla*/
+  
+  .batery {
+      display: none;
+  }
   
   @media screen and (max-width:1024px) {
       .control {
@@ -297,7 +309,19 @@
       .batery {
           background-color: #33302E;
           width: 8em;
-          height: 38em;
+          height: 18.3em;
+          margin-top: -25.2em;
+          z-index: 1;
+          box-shadow: 0em 0.1em 0.2em 0.1em #242121;
+          display: block;
+      }
+      .batery-logo {
+          width: 6em;
+          height: 7em;
+          margin-right: auto;
+          margin-left: auto;
+          display: flex;
+          margin-top: 5em;
       }
   }
   
@@ -305,5 +329,8 @@
       body {
           background: #D13434;
           margin: auto;
+      }
+      .consola {
+          max-width: 20em;
       }
   }
