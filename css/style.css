@@ -74,7 +74,7 @@
   
   .notch-left {
       width: 0.7em;
-      height: 0.6em;
+      height: 0.7em;
       position: absolute;
       z-index: 1;
       border-right: 0.4em solid #33302E;
@@ -87,7 +87,7 @@
   
   .notch-right {
       width: 0.7em;
-      height: 0.6em;
+      height: 0.7em;
       position: absolute;
       z-index: 1;
       border-left: 0.4em solid #33302E;
@@ -175,6 +175,7 @@
   .control-right {
       position: absolute;
       right: 0.6em;
+      z-index: -1;
   }
   
   .control-right-top {
